@@ -61,7 +61,7 @@ function.
 
 ``` r
 library(scrapol)
-url <- c("https://ballotpedia.org/Marsha_Berzins",
+url <- c("https://ballotpedia.org/Maryanne_Jordan",
          "https://ballotpedia.org/Michelle_Mills",
          "https://ballotpedia.org/Jim_Duggan")
 scrapol_city(url, sleep=15)
@@ -69,17 +69,17 @@ scrapol_city(url, sleep=15)
 #> Progress: 3 in total, 1 remaining. 
 #> Progress: 3 in total, 0 remaining. 
 #> It's done!
-#>                                      url     partisanship
-#> 1 https://ballotpedia.org/Marsha_Berzins Republican Party
-#> 2 https://ballotpedia.org/Michelle_Mills             <NA>
-#> 3     https://ballotpedia.org/Jim_Duggan      Nonpartisan
-#>                       district
-#> 1 Aurora City Council Ward III
-#> 2        Columbus City Council
-#> 3           Plano City Council
+#>                                       url     partisanship
+#> 1 https://ballotpedia.org/Maryanne_Jordan Democratic Party
+#> 2  https://ballotpedia.org/Michelle_Mills             <NA>
+#> 3      https://ballotpedia.org/Jim_Duggan      Nonpartisan
+#>                district
+#> 1    Boise City Council
+#> 2 Columbus City Council
+#> 3    Plano City Council
 ```
 
 ## Report bugs
 
 If you encounter any bugs or have any questions about the package,
-please feel free to email me at hzhou13<at>uh.edu. Thank you!
+please feel free to email me at hzhou13 at uh.edu. Thank you!

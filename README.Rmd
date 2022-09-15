@@ -50,7 +50,7 @@ This is a basic example which shows you how to collect information about party a
 
 ```{r example}
 library(scrapol)
-url <- c("https://ballotpedia.org/Marsha_Berzins",
+url <- c("https://ballotpedia.org/Maryanne_Jordan",
          "https://ballotpedia.org/Michelle_Mills",
          "https://ballotpedia.org/Jim_Duggan")
 scrapol_city(url, sleep=15)
@@ -59,4 +59,4 @@ scrapol_city(url, sleep=15)
 
 ## Report bugs
 
-If you encounter any bugs or have any questions about the package, please feel free to email me at hzhou13<at>uh.edu. Thank you!
+If you encounter any bugs or have any questions about the package, please feel free to email me at hzhou13 at uh.edu. Thank you!
