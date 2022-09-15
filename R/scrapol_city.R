@@ -16,7 +16,7 @@
 #' scrapol_city(url, sleep=15)
 scrapol_city <- function(url, sleep) {
 
-  if (sleep<10) {
+  if (sleep < 10) {
     print("Please set sleep time to 10 seconds or above.")
   }
 
