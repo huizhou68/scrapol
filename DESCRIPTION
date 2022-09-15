@@ -1,0 +1,16 @@
+Package: scrapol
+Title: Scraping Politicians' Party and District Information
+Version: 0.0.0.9000
+Authors@R: 
+    person("Hui", "Zhou", , "huizhou68@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7381-5487"))
+Description: Scraping American politicians' party and district information based on Ballotpedia. According to Ballotpedia's policy, crawlers are allowed only between 06:00 and 08:45 UTC (GMT) with a maximum rate of one page every 5 seconds.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    magrittr,
+    rvest,
+    stringr,
+    xml2
