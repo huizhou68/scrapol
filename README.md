@@ -23,13 +23,10 @@ The package might be updated in the future with two aims.
 1.  To accommodate the need of data collection for state- and
     federal-level politicians.
 2.  The present version of the package can achieve an accuracy rate of
-    91.65%
-    (![954/1041\\times100\\%](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;954%2F1041%5Ctimes100%5C%25 "954/1041\times100\%"))
-    and 95.49%
-    (![994/1041}\\times100\\%](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;994%2F1041%7D%5Ctimes100%5C%25 "994/1041}\times100\%"))
-    in terms of parsing party and district information based on a test
-    of 1,041 city council members. I will likely modify the code to
-    further improve the accuracy rate.
+    91.65% (954/1041\*100%) and 95.49% (994/1041\*100%) in terms of
+    parsing party and district information based on a test of 1,041 city
+    council members. I will likely modify the code to further improve
+    the accuracy rate.
 
 ## Legal Concerns
 
@@ -105,7 +102,7 @@ ScrapingDistrict(read_html("https://ballotpedia.org/Jim_Duggan"))
 #> [1] "Plano City Council"
 ```
 
-## Report bugs
+## Contact
 
 If you encounter any bugs or have any questions, please email me at
 hzhou13 (at) uh.edu. Thank you!

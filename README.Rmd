@@ -25,7 +25,7 @@ This package was tailored for American city council members, although the `Scrap
 The package might be updated in the future with two aims.
 
 1. To accommodate the need of data collection for state- and federal-level politicians.
-2. The present version of the package can achieve an accuracy rate of 91.65%  ($954/1041\times100\%$) and 95.49% ($994/1041}\times100\%$) in terms of parsing party and district information based on a test of 1,041 city council members. I will likely modify the code to further improve the accuracy rate.
+2. The present version of the package can achieve an accuracy rate of 91.65%  (954/1041\*100%) and 95.49% (994/1041\*100%) in terms of parsing party and district information based on a test of 1,041 city council members. I will likely modify the code to further improve the accuracy rate.
 
 ## Legal Concerns
 
@@ -76,6 +76,6 @@ ScrapingParty(read_html("https://ballotpedia.org/Maryanne_Jordan"))
 ScrapingDistrict(read_html("https://ballotpedia.org/Jim_Duggan"))
 ```
 
-## Report bugs
+## Contact
 
 If you encounter any bugs or have any questions, please email me at hzhou13 (at) uh.edu. Thank you!
