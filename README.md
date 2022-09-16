@@ -6,13 +6,13 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of `scrapol` is to facilitate data collection with respect to
-American politicians whose information is publicly available on
+The goal of `scrapol` is to facilitate academic study on American
+politicians whose information is publicly available on
 [Ballotpedia](https://ballotpedia.org/). This package enables users to
-gather party and district information through the `ScrapingParty()` and
-`ScrapingDistrict()` functions, respectively. Alternatively, users may
-apply the `scrapol_city()` function to scrape both information
-simultaneously.
+gather politicians’ party and district information through the
+`ScrapingParty()` and `ScrapingDistrict()` functions, respectively.
+Alternatively, users may apply the `scrapol_city()` function to scrape
+both information simultaneously.
 
 This package was tailored for politicians at the city or county level,
 although the `ScrapingParty()` function can be used to scrape party
@@ -22,10 +22,10 @@ The package will be further developed in the future with two aims.
 
 1.  To accommodate the need of data collection for state- and
     federal-level politicians.
-2.  Based on a test of 1000 politicians, the present version of the
-    package can achieve an accuracy rate of 75% and 83% at parsing party
-    and district information, respectively. I will modify the code to
-    improve the accuracy rate.
+2.  The present version of the package can achieve an accuracy rate of
+    75% and 83% at parsing party and district information based on a
+    test of 1000 politicians. I will modify the code to improve the
+    accuracy rate.
 
 ## Legal Concerns
 
@@ -63,21 +63,17 @@ function.
 ``` r
 library(scrapol)
 url <- c("https://ballotpedia.org/Maryanne_Jordan",
-         "https://ballotpedia.org/Michelle_Mills",
+         "https://ballotpedia.org/Jeffrey_Lalloway",
          "https://ballotpedia.org/Jim_Duggan")
 scrapol_city(url, sleep=15)
 #> Progress: 3 in total, 2 remaining. 
 #> Progress: 3 in total, 1 remaining. 
 #> Progress: 3 in total, 0 remaining. 
 #> It's done!
-#>                                       url     partisanship
-#> 1 https://ballotpedia.org/Maryanne_Jordan Democratic Party
-#> 2  https://ballotpedia.org/Michelle_Mills             <NA>
-#> 3      https://ballotpedia.org/Jim_Duggan      Nonpartisan
-#>                district
-#> 1    Boise City Council
-#> 2 Columbus City Council
-#> 3    Plano City Council
+#>                                        url     partisanship            district
+#> 1  https://ballotpedia.org/Maryanne_Jordan Democratic Party  Boise City Council
+#> 2 https://ballotpedia.org/Jeffrey_Lalloway             <NA> Irvine City Council
+#> 3       https://ballotpedia.org/Jim_Duggan      Nonpartisan  Plano City Council
 ```
 
 ## Report bugs
