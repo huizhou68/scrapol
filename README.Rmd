@@ -33,7 +33,7 @@ Users who are interested in scraping with this package should attend to legal re
 
 > The use of automated systems or software to extract data from this website for commercial purposes ('screen scraping') is prohibited unless the third party has directly concluded a written license agreement with Ballotpedia.
 
-In addition, there is some limitation on scraping. **Crawlers are allowed only between 06:00 and 08:45 UTC (GMT) with a maximum rate of one page every 5 seconds**. I suggest that users set a sleep time of ten seconds or more to reduce the pressure on the website.
+In addition, there are some limitations on scraping. **Crawlers are allowed only between 06:00 and 08:45 UTC (GMT) with a maximum rate of one page every 5 seconds** (check out its robots file [here](https://ballotpedia.org/robots.txt)). I suggest that users set a sleep time of ten seconds or more to reduce the pressure on the website.
 
 ## Installation
 
