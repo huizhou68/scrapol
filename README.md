@@ -9,10 +9,11 @@
 The goal of `scrapol` is to facilitate academic study on American city
 council representatives whose information is publicly available on
 [Ballotpedia](https://ballotpedia.org/). This package enables users to
-gather politicians’ party and district information through the
-`ScrapingParty()` and `ScrapingDistrict()` functions, respectively.
-Alternatively, users may apply the `scrapol_city()` function to scrape
-both information simultaneously.
+gather politicians’ party and district information based solely on a
+url. Users could either utilize `ScrapingParty()` and
+`ScrapingDistrict()` to collect party and district information
+respectively or leverage the `scrapol_city()` function to gather both
+information simultaneously.
 
 This package was tailored for American city council members, although
 the `ScrapingParty()` function can be used to scrape party information
@@ -22,16 +23,16 @@ The package might be updated in the future with two aims.
 
 1.  To accommodate the need of data collection for state- and
     federal-level politicians.
-2.  The present version of the package can achieve an accuracy rate of
-    91.65% (954/1041\*100%) and 95.49% (994/1041\*100%) in terms of
-    parsing party and district information based on a test of 1,041 city
-    council members. I will likely modify the code to further improve
-    the accuracy rate.
+2.  Based on a test of 1,041 city council members, the present version
+    of the package can achieve an accuracy rate of 91.65%
+    (954/1041\*100%) and 95.49% (994/1041\*100%) in terms of parsing
+    party and district information. I will likely modify the code to
+    further improve the accuracy rate.
 
 ## Legal Concerns
 
-Users interested in scraping with this package should attend to legal
-responsibility. According to
+Users interested in using this package for commercial purposes should
+attend to legal responsibility. According to
 [Ballotpedia](https://ballotpedia.org/Ballotpedia:General_disclaimer),
 
 > The use of automated systems or software to extract data from this
@@ -47,17 +48,16 @@ or more to reduce the pressure on the website.
 
 ## Installation
 
-You can install the development version of `scrapol` from
-[GitHub](https://github.com/) with:
+You can install the development version of `scrapol` from GitHub with:
 
 ``` r
-install.packages('devtools', repos = 'http://cran.us.r-project.org') # if not already installed
+install.packages('devtools', repos='http://cran.us.r-project.org') # if not already installed
 devtools::install_github("huizhou68/scrapol")
 ```
 
 ## Dependencies
 
-The use of `scrapol` is dependent on the following packages:
+The use of `scrapol` depends on the following packages:
 
 1.  xml2: to request a webpage
 2.  rvest: to parse a webpage
@@ -68,10 +68,9 @@ Please make sure to install them before using the `scrapol` package.
 
 ## Usage
 
-This is a basic example which shows you how to collect party and
-district information readily with the `scrapol_city()` function, which
-is built upon a for loop that allows you to iterate over a number of
-urls.
+This example shows you how to collect party and district information
+readily with the `scrapol_city()` function, which is built upon a for
+loop that allows you to iterate over a number of urls.
 
 ``` r
 library(scrapol)
@@ -89,10 +88,10 @@ scrapol_city(url=urls, sleep=15)
 #> 3       https://ballotpedia.org/Jim_Duggan      Nonpartisan  Plano City Council
 ```
 
-Alternatively, you may apply the `ScrapingParty()` and
+Alternatively, you may leverage the `ScrapingParty()` and
 `ScrapingDistrict()` functions to collect information about party and
-district, but these functions will take only one url at a time. You will
-need to write loops to deal with multiple urls.
+district respectively, but these functions will take only one url at a
+time. You will need to write loops to deal with multiple urls.
 
 ``` r
 library(xml2)
@@ -104,5 +103,5 @@ ScrapingDistrict(read_html("https://ballotpedia.org/Jim_Duggan"))
 
 ## Contact
 
-If you encounter any bugs or have any questions, please email me at
-hzhou13 (at) uh.edu. Thank you!
+If you encounter any bugs or have any questions about this package,
+please email me at hzhou13(at)uh.edu. Thanks!
