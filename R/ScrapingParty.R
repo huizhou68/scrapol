@@ -1,6 +1,6 @@
 #' Scraping Party Information
 #'
-#' @param MemberWebpage The html of a url obtained through the read_html function
+#' @param MemberWebpage The html of a politician's webpage obtained through the read_html function
 #'
 #' @return Party information
 #' @export

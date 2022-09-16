@@ -1,7 +1,7 @@
-#' Scraping Politicians' Party and District Information Across American Cities and Counties
+#' Scraping City Council Members' Party and District Information
 #'
 #' @param url A vector of urls pointing to politicians' webpages on Ballotpedia
-#' @param sleep The sleep time between two scraping trials
+#' @param sleep The sleep time between two visits
 #'
 #' @return A dataframe consists of url, partisanship, and district
 #' @export

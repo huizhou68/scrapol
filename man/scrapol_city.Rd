@@ -2,20 +2,20 @@
 % Please edit documentation in R/scrapol_city.R
 \name{scrapol_city}
 \alias{scrapol_city}
-\title{Scraping Politicians' Party and District Information Across American Cities and Counties}
+\title{Scraping City Council Members' Party and District Information}
 \usage{
 scrapol_city(url, sleep)
 }
 \arguments{
 \item{url}{A vector of urls pointing to politicians' webpages on Ballotpedia}
 
-\item{sleep}{The sleep time between two scraping trials}
+\item{sleep}{The sleep time between two visits}
 }
 \value{
 A dataframe consists of url, partisanship, and district
 }
 \description{
-Scraping Politicians' Party and District Information Across American Cities and Counties
+Scraping City Council Members' Party and District Information
 }
 \examples{
 url <- c("https://ballotpedia.org/Angelique_Ashby", "https://ballotpedia.org/Connie_Dodson")

@@ -7,7 +7,7 @@
 ScrapingParty(MemberWebpage)
 }
 \arguments{
-\item{MemberWebpage}{The html of a url obtained through the read_html function}
+\item{MemberWebpage}{The html of a politician's webpage obtained through the read_html function}
 }
 \value{
 Party information
